@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/OML EPBS Ecore Model/src-gen" creationIcons="false"
+    editDirectory="/OML EPBS Ecore Model.edit/src-gen" editorDirectory="/OML EPBS Ecore Model.editor/src-gen"
+    modelPluginID="OML_EPBS_Ecore_Model" modelName="OML_EPBS_Ecore_Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>oML_EPBS_Ecore_Model.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="OML_EPBS_Ecore_Model" basePackage="oml epbs ecore model" disposableProviderFactory="true"
+      ecorePackage="oML_EPBS_Ecore_Model.ecore#/">
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="oML_EPBS_Ecore_Model.ecore#//ModelingFramework">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/specializes"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/specializableelementeOpposite"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement/contains"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="oML_EPBS_Ecore_Model" nsURI="http://www.example.org/oML_EPBS_Ecore_Model"
+    nsPrefix="oML_EPBS_Ecore_Model">
+  <eSubpackages name="ModelingFramework">
+    <eClassifiers xsi:type="ecore:EClass" name="SpecializableElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="specializes" upperBound="-1"
+          eType="#//ModelingFramework/SpecializableElement" eOpposite="#//ModelingFramework/SpecializableElement/isSpecializedBy"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="isSpecializedBy" eType="#//ModelingFramework/SpecializableElement"
+          eOpposite="#//ModelingFramework/SpecializableElement/specializes"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ContainableElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contains" eType="#//ModelingFramework/ContainableElement"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
