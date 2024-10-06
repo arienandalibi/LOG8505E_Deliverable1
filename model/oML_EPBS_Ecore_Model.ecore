@@ -4,12 +4,18 @@
     nsPrefix="oML_EPBS_Ecore_Model">
   <eSubpackages name="ModelingFramework">
     <eClassifiers xsi:type="ecore:EClass" name="SpecializableElement" abstract="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="If we want to implement transitive property from OML:&#xD;&#xA;"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="specializes" upperBound="-1"
           eType="#//ModelingFramework/SpecializableElement" eOpposite="#//ModelingFramework/SpecializableElement/isSpecializedBy"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="isSpecializedBy" eType="#//ModelingFramework/SpecializableElement"
           eOpposite="#//ModelingFramework/SpecializableElement/specializes"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ContainableElement" abstract="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for contains relation."/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1"
           eType="#//ModelingFramework/ContainableElement" eOpposite="#//ModelingFramework/ContainableElement/isContainedIn"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="isContainedIn" eType="#//ModelingFramework/ContainableElement"
@@ -27,26 +33,61 @@
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.contains->forAll(c | c.oclIsKindOf(Component))           # restricts all base:contains to Component&#xD;&#xA;- self.isContainedIn->forAll(c | c.oclIsKindOf(Component))  # restricts all base:isContainedIn to Component"/>
       </eAnnotations>
       <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
-        <details key="archetype" value="Description"/>
+        <details key="archetype" value="Role"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//ModelingFramework/Component">
       <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
-        <details key="archetype" value="Description"/>
+        <details key="archetype" value="Role"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;self.isContainedIn->isEmpty()   # restricts all base:isContainedIn to owl:Nothing, owl:Nothing is like an empty set"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="supports" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/isSuportedBy"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Capability" eSuperTypes="#//ModelingFramework/SpecializableElement">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Capability))           # restricts all base:specializes to Capability&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capability))   # restricts all base:isSpecializedBy to Capability"/>
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Capability))           # restricts all base:specializes to Capability&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capability))   # restricts all base:isSpecializedBy to Capability&#xD;&#xA;&#xD;&#xA;Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for includes relation."/>
       </eAnnotations>
       <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
-        <details key="archetype" value="Description"/>
+        <details key="archetype" value="Role"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="involves" upperBound="-1"
+          eType="#//ModelingFramework/InvolvableElement" eOpposite="#//ModelingFramework/InvolvableElement/inInvolvedIn"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="_includes" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/isIncludedIn">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="In OML: ^includes, changed to _includes for Ecore naming conventions&#xD;&#xA;Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for includes relation."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="isIncludedIn" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/_includes"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="_extends" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/isExtendedBy">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="In OML: ^extends, changed to _extends for Ecore naming conventions"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="isExtendedBy" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/_extends"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="isSuportedBy" upperBound="-1"
+          eType="#//ModelingFramework/System" eOpposite="#//ModelingFramework/System/supports"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="InvolvableElement" abstract="true"
-        eSuperTypes="#//ModelingFramework/SpecializableElement"/>
+        eSuperTypes="#//ModelingFramework/SpecializableElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="inInvolvedIn" upperBound="-1"
+          eType="#//ModelingFramework/Capability" eOpposite="#//ModelingFramework/Capability/involves"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//ModelingFramework/InvolvableElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Actor))&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Actor))"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Entity" eSuperTypes="#//ModelingFramework/InvolvableElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Entity))&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Entity))"/>
+      </eAnnotations>
+    </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

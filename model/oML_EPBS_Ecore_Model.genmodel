@@ -28,9 +28,30 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/isExpressedIn"/>
       </genClasses>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Component"/>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System"/>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability"/>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System/supports"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/involves"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/_includes"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isIncludedIn"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/_extends"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isExtendedBy"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isSuportedBy"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement/inInvolvedIn"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Actor"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Entity"/>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>
