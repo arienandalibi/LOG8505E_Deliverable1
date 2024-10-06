@@ -27,6 +27,8 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/hasExpression"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/isExpressedIn"/>
       </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Component"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System"/>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>
