@@ -10,7 +10,17 @@
           eOpposite="#//ModelingFramework/SpecializableElement/specializes"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ContainableElement">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="contains" eType="#//ModelingFramework/ContainableElement"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1"
+          eType="#//ModelingFramework/ContainableElement" eOpposite="#//ModelingFramework/ContainableElement/isContainedIn"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="isContainedIn" eType="#//ModelingFramework/ContainableElement"
+          eOpposite="#//ModelingFramework/ContainableElement/contains"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Constraint">
+      <eAnnotations/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasExpression" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
+        <eAnnotations/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isExpressedIn" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
     </eClassifiers>
   </eSubpackages>
 </ecore:EPackage>

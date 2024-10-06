@@ -15,11 +15,17 @@
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/specializes"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/specializableelementeOpposite"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/isSpecializedBy"/>
       </genClasses>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement/contains"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement/isContainedIn"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/hasExpression"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/isExpressedIn"/>
       </genClasses>
     </nestedGenPackages>
   </genPackages>
