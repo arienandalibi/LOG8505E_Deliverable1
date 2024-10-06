@@ -3,13 +3,13 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="oML_EPBS_Ecore_Model" nsURI="http://www.example.org/oML_EPBS_Ecore_Model"
     nsPrefix="oML_EPBS_Ecore_Model">
   <eSubpackages name="ModelingFramework">
-    <eClassifiers xsi:type="ecore:EClass" name="SpecializableElement">
+    <eClassifiers xsi:type="ecore:EClass" name="SpecializableElement" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EReference" name="specializes" upperBound="-1"
           eType="#//ModelingFramework/SpecializableElement" eOpposite="#//ModelingFramework/SpecializableElement/isSpecializedBy"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="isSpecializedBy" eType="#//ModelingFramework/SpecializableElement"
           eOpposite="#//ModelingFramework/SpecializableElement/specializes"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="ContainableElement">
+    <eClassifiers xsi:type="ecore:EClass" name="ContainableElement" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1"
           eType="#//ModelingFramework/ContainableElement" eOpposite="#//ModelingFramework/ContainableElement/isContainedIn"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="isContainedIn" eType="#//ModelingFramework/ContainableElement"
@@ -24,7 +24,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//ModelingFramework/ContainableElement">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.contains->forAll(c | c.oclIsKindOf(Component))                     # restricts all base:contains to Component&#xD;&#xA;- self.isContainedIn->forAll(c | c.oclIsKindOf(Component))            # restricts all base:isContainedIn to Component"/>
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.contains->forAll(c | c.oclIsKindOf(Component))           # restricts all base:contains to Component&#xD;&#xA;- self.isContainedIn->forAll(c | c.oclIsKindOf(Component))  # restricts all base:isContainedIn to Component"/>
       </eAnnotations>
       <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
         <details key="archetype" value="Description"/>
@@ -35,8 +35,18 @@
         <details key="archetype" value="Description"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;self.isContainedIn->isEmpty()&#x9;&#x9;# restricts all base:isContainedIn to owl:Nothing, owl:Nothing is like an empty set"/>
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;self.isContainedIn->isEmpty()   # restricts all base:isContainedIn to owl:Nothing, owl:Nothing is like an empty set"/>
       </eAnnotations>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Capability" eSuperTypes="#//ModelingFramework/SpecializableElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Capability))           # restricts all base:specializes to Capability&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capability))   # restricts all base:isSpecializedBy to Capability"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
+        <details key="archetype" value="Description"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="InvolvableElement" abstract="true"
+        eSuperTypes="#//ModelingFramework/SpecializableElement"/>
   </eSubpackages>
 </ecore:EPackage>

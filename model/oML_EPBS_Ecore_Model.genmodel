@@ -29,6 +29,8 @@
       </genClasses>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Component"/>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement"/>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>
