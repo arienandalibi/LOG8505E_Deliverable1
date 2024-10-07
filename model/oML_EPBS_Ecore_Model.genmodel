@@ -10,48 +10,93 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="OML_EPBS_Ecore_Model" basePackage="oml epbs ecore model" disposableProviderFactory="true"
       ecorePackage="oML_EPBS_Ecore_Model.ecore#/">
-    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="oML_EPBS_Ecore_Model.ecore#//ModelingFramework">
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement">
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/specializes"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement/specializes"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/SpecializableElement/isSpecializedBy"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement/isSpecializedBy"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ContainableElement">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement/contains"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ContainableElement/contains"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/ContainableElement/isContainedIn"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ContainableElement/isContainedIn"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/hasExpression"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Constraint/isExpressedIn"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint/hasExpression"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint/isExpressedIn"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Component"/>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/System">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/System/supports"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/System/supports"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/involves"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/involves"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/_includes"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/_includes"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isIncludedIn"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/isIncludedIn"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/_extends"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/_extends"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isExtendedBy"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/isExtendedBy"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Capability/isSuportedBy"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/isSuportedBy"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability/isImplementedBy"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement">
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/InvolvableElement">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//ModelingFramework/InvolvableElement/inInvolvedIn"/>
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/InvolvableElement/inInvolvedIn"/>
       </genClasses>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Actor"/>
-      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//ModelingFramework/Entity"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Actor"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Entity"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/PerformingElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/PerformingElement/performs"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ExchangingElement"/>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Function">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Function/hasPort"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Function/hasInput"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Function/hasOutput"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Function/isPerformedBy"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Item">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Item/isConveyedBy"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Chain">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Chain/implements"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Port">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Port/isPortOf"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Input">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Input/isInputOf"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Output">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Output/isOutputOf"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange/receivesFrom"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange/sendsTo"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange/conveys"/>
+      </genClasses>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>
