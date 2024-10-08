@@ -70,6 +70,17 @@
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Capability))           # restricts all base:specializes to Capability&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capability))   # restricts all base:isSpecializedBy to Capability&#xD;&#xA;&#xD;&#xA;Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for includes relation."/>
       </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+        <details key="onlySpecializesCapability" value="self.specializes->forAll(c | c.oclIsKindOf(Capability))"/>
+        <details key="isSpecializedByCapability" value="self.isSpecializedBy->forAll(c | c.oclIsKindOf(Capability))"/>
+        <details key="IrreflexiveIncludes" value="not self._includes->includes(self)"/>
+        <details key="AsymmetricIncludes" value="self._includes->forAll(c | not c.isIncludedIn->includes(self))"/>
+        <details key="IrreflexiveExtends" value="not self._extends->includes(self)"/>
+        <details key="AsymmetricExtends" value="self._extends->forAll(c | not c.isExtendedBy->includes(self))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="onlySpecializesCapability isSpecializedByCapability IrreflexiveIncludes AsymmetricIncludes IrreflexiveExtends AsymmetricExtends"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="involves" upperBound="-1"
           eType="#//OMLVocabulary/InvolvableElement" eOpposite="#//OMLVocabulary/InvolvableElement/inInvolvedIn"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="_includes" upperBound="-1"
@@ -102,10 +113,24 @@
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Actor))&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Actor))"/>
       </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+        <details key="onlySpecializesActor" value="self.specializes->forAll(c | c.oclIsKindOf(Actor))"/>
+        <details key="isSpecializedByActor" value="self.isSpecializedBy->forAll(c | c.oclIsKindOf(Actor))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="onlySpecializesActor isSpecializedByActor"/>
+      </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Entity" eSuperTypes="#//OMLVocabulary/InvolvableElement">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.specializes->forAll(c | c.oclIsKindOf(Entity))&#xD;&#xA;- self.isSpecializedBy->forAll(c | c.oclIsKindOf(Entity))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+        <details key="onlySpecializesEntity" value="self.specializes->forAll(c | c.oclIsKindOf(Entity))"/>
+        <details key="isSpecializedByEntity" value="self.isSpecializedBy->forAll(c | c.oclIsKindOf(Entity))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="onlySpecializesEntity isSpecializedByEntity"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="PerformingElement" abstract="true">
