@@ -1,0 +1,19 @@
+import 'oML_EPBS_Ecore_Model.ecore'
+
+package oML_EPBS_Ecore_Model::OMLVocabulary
+
+context SpecializableElement
+inv Transitive: self.specializes->forAll(s | s.specializes->forAll(t | t <> self implies self.specializes->includes(t)))
+
+context ContainableElement
+inv Irreflexive: not self.contains->includes(self)
+inv Asymmetric: self.contains->forAll(c | not c.isContainedIn->includes(self))
+
+context Component
+inv OnlyContainComponents: self.contains->forAll(c | c.oclIsKindOf(Component))
+inv IsContainedInComponents: self.isContainedIn->forAll(c | c.oclIsKindOf(Component))
+
+context System
+inv isContainedInEmpty: self.isContainedIn->isEmpty()
+
+endpackage

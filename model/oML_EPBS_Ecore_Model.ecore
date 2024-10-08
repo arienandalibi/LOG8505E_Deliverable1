@@ -57,6 +57,12 @@
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;self.isContainedIn->isEmpty()   # restricts all base:isContainedIn to owl:Nothing, owl:Nothing is like an empty set"/>
       </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+        <details key="isContainedInEmpty" value="self.isContainedIn->isEmpty()"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="isContainedInEmpty"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="supports" upperBound="-1"
           eType="#//OMLVocabulary/Capability" eOpposite="#//OMLVocabulary/Capability/isSuportedBy"/>
     </eClassifiers>
