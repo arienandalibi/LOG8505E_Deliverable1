@@ -38,4 +38,12 @@ inv onlyContainsExchange: self.contains->forAll(c | c.oclIsKindOf(Exchange))
 context Exchange
 inv RestrictContainmentToChain: self.isContainedIn->forAll(c | c.oclIsKindOf(Chain))
 
+context Requirement
+inv onlyContainsRequirements: self.contains->forAll(c | c.oclIsKindOf(Requirement))
+inv isContainedInRequirements: self.isContainedIn->forAll(c | c.oclIsKindOf(Requirement))
+inv IrreflexiveDerives: not self.derives->includes(self)
+inv AsymmetricDerives: self.derives->forAll(c | not c.isDerivedFrom->includes(self))
+inv IrreflexiveRefines: not self.refines->includes(self)
+inv AsymmetricRefines: self.refines->forAll(c | not c.isRefinedBy->includes(self))
+
 endpackage

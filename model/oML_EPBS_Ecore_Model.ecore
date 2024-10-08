@@ -198,6 +198,17 @@
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="OCL Restrictions to implement:&#xD;&#xA;- self.contains->forAll(c | c.oclIsKindOf(Requirement))           # restricts all base:contains to Requirement&#xD;&#xA;- self.isContainedIn->forAll(c | c.oclIsKindOf(Requirement))  # restricts all base:isContainedIn to Requirement"/>
       </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+        <details key="onlyContainsRequirements" value="self.contains->forAll(c | c.oclIsKindOf(Requirement))"/>
+        <details key="isContainedInRequirements" value="self.isContainedIn->forAll(c | c.oclIsKindOf(Requirement))"/>
+        <details key="IrreflexiveDerives" value="not self.derives->includes(self)"/>
+        <details key="AsymmetricDerives" value="self.derives->forAll(c | not c.isDerivedFrom->includes(self))"/>
+        <details key="IrreflexiveRefines" value="not self.refines->includes(self)"/>
+        <details key="AsymmetricRefines" value="self.refines->forAll(c | not c.isRefinedBy->includes(self))"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="constraints" value="onlyContainsRequirements isContainedInRequirements IrreflexiveDerives AsymmetricDerives IrreflexiveRefines AsymmetricRefines"/>
+      </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasRationale" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
           <details key="documentation" value="Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for derives relation.&#xD;&#xA;Need OCL restrictions to ensure irreflexive and asymmetric constraints defined in OML for refines relation."/>
