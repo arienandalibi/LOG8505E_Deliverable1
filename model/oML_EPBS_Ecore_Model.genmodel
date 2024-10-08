@@ -26,6 +26,8 @@
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint/hasExpression"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint/isExpressedIn"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Constraint/isConstraintOf"/>
       </genClasses>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
       <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/System">
@@ -96,6 +98,29 @@
             ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange/sendsTo"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Exchange/conveys"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/hasRationale"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/derives"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/isDerivedFrom"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/refines"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/isRefinedBy"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/specifies"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/hasConstraint"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Requirement/justifies"/>
+      </genClasses>
+      <genClasses ecoreClass="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/DesignElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/DesignElement/isSpecificedBy"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/DesignElement/isJustifiedBy"/>
       </genClasses>
     </nestedGenPackages>
   </genPackages>
