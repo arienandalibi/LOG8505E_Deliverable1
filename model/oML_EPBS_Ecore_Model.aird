@@ -3,9 +3,20 @@
   <viewpoint:DAnalysis uid="_ZfnQEINpEe-JaeuR9NlnAg" selectedViews="_ZrGuYINpEe-JaeuR9NlnAg _dm4yAINqEe-JaeuR9NlnAg _dnHbgINqEe-JaeuR9NlnAg _dnnKwINqEe-JaeuR9NlnAg" version="15.4.1.202403191723">
     <semanticResources>oML_EPBS_Ecore_Model.ecore</semanticResources>
     <semanticResources>oML_EPBS_Ecore_Model.genmodel</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model2.ocl</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model2.ocl.oclas</semanticResources>
+    <semanticResources>ocl_restrictions.ocl</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model.ocl.oclas</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model.ecore.oclas</semanticResources>
+    <semanticResources>http://www.eclipse.org/ocl/2015/Orphanage.oclas</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore.oclas</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2003/XMLType.oclas</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model.oclinecore.oclas</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model.oclstdlib.oclas</semanticResources>
+    <semanticResources>oML_EPBS_Ecore_Model.oclstdlib</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ZrGuYINpEe-JaeuR9NlnAg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZvA-AINpEe-JaeuR9NlnAg" name="oML_EPBS_Ecore_Model" repPath="#_ZtjlcINpEe-JaeuR9NlnAg" changeId="1728356428857">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ZvA-AINpEe-JaeuR9NlnAg" name="oML_EPBS_Ecore_Model" repPath="#_ZtjlcINpEe-JaeuR9NlnAg" changeId="1728377726033">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="oML_EPBS_Ecore_Model.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -772,14 +783,7 @@
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ZxK6IINpEe-JaeuR9NlnAg" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ZxLhMINpEe-JaeuR9NlnAg">
-        <computedStyleDescriptions xmi:type="style:FlatContainerStyleDescription" xmi:id="_EEQtQoQjEe-D-fRCT6zlQQ" arcWidth="8" arcHeight="8" borderSizeComputationExpression="1" tooltipExpression="service:renderTooltip" roundedCorner="true" widthComputationExpression="12" heightComputationExpression="10" backgroundStyle="Liquid">
-          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          <backgroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          <foregroundColor xmi:type="description:UserFixedColor" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@userColorsPalettes[name='Ecore%20Palette']/@entries[name='RoleColor']"/>
-        </computedStyleDescriptions>
-      </data>
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ZxLhMINpEe-JaeuR9NlnAg"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mj030INqEe-JaeuR9NlnAg" name="OMLVocabulary" width="24" height="16">
       <target xmi:type="ecore:EPackage" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary"/>
@@ -791,16 +795,16 @@
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_-n_Q4INpEe-JaeuR9NlnAg" name="SpecializableElement" tooltipText="" outgoingEdges="_OTzc8IN_Ee-JaeuR9NlnAg" incomingEdges="_OTzc8IN_Ee-JaeuR9NlnAg _yPn1LIOtEe-dFMCpWL0vag _QfAvgoOvEe-dFMCpWL0vag" width="12" height="10">
         <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement"/>
         <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_JyrPwYOuEe-dFMCpWL0vag" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_D3s_04VTEe-EbNsaHvCC2A" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
           <labelFormat>italic</labelFormat>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_CWLkcINrEe-JaeuR9NlnAg" name="ContainableElement" tooltipText="" outgoingEdges="_gsV_5oOSEe-71vuEOjhxjg" incomingEdges="_gsV_5oOSEe-71vuEOjhxjg _7GHjcIOnEe-dFMCpWL0vag _HLpCeIR6Ee-tEvGAhNRu6Q _IpQ6YoR-Ee-tEvGAhNRu6Q _xttldIUREe-tEvGAhNRu6Q" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_CWLkcINrEe-JaeuR9NlnAg" name="ContainableElement" tooltipText="&#xA;WARNING : Extra 'constraints' annotation entry for «invariant» 'oML_EPBS_Ecore_Model::OMLVocabulary::ContainableElement::Asymmetric'" outgoingEdges="_gsV_5oOSEe-71vuEOjhxjg" incomingEdges="_gsV_5oOSEe-71vuEOjhxjg _7GHjcIOnEe-dFMCpWL0vag _HLpCeIR6Ee-tEvGAhNRu6Q _IpQ6YoR-Ee-tEvGAhNRu6Q _xttldIUREe-tEvGAhNRu6Q" width="12" height="10">
         <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ContainableElement"/>
         <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/ContainableElement"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_KSJaBYOuEe-dFMCpWL0vag" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_waJF1YVQEe-EbNsaHvCC2A" iconPath="/org.eclipse.emf.ecoretools.design/icons/full/obj16/EClass_abstract.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="228,228,228">
           <labelFormat>italic</labelFormat>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
@@ -830,22 +834,28 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3sdgAIOnEe-dFMCpWL0vag" name="Component" tooltipText="" outgoingEdges="_7GHjcIOnEe-dFMCpWL0vag _ho0EDoSFEe-tEvGAhNRu6Q" incomingEdges="_sQzqIIOpEe-dFMCpWL0vag" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3sdgAIOnEe-dFMCpWL0vag" name="Component" tooltipText="&#xA;WARNING : Extra 'constraints' annotation entry for «invariant» 'oML_EPBS_Ecore_Model::OMLVocabulary::Component::IsContainedInComponents'&#xA;WARNING : Extra 'constraints' annotation entry for «invariant» 'oML_EPBS_Ecore_Model::OMLVocabulary::Component::OnlyContainComponents'" outgoingEdges="_7GHjcIOnEe-dFMCpWL0vag _ho0EDoSFEe-tEvGAhNRu6Q" incomingEdges="_sQzqIIOpEe-dFMCpWL0vag" width="12" height="10">
         <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
         <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Fyg-1oQjEe-D-fRCT6zlQQ" description="_EEQtQoQjEe-D-fRCT6zlQQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="250,240,180"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6besEYVJEe-EbNsaHvCC2A" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+        </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_uE7IkIOoEe-dFMCpWL0vag" name="System" tooltipText="" outgoingEdges="_sQzqIIOpEe-dFMCpWL0vag _uRGjAoQiEe-D-fRCT6zlQQ" width="12" height="10">
         <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/System"/>
         <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/System"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_GElmS4QjEe-D-fRCT6zlQQ" description="_EEQtQoQjEe-D-fRCT6zlQQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="250,240,180"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_88OHUYVFEe-EbNsaHvCC2A" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+        </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_LuyMkIOtEe-dFMCpWL0vag" name="Capability" tooltipText="" outgoingEdges="_yPn1LIOtEe-dFMCpWL0vag _qPkkDIQeEe-D-fRCT6zlQQ _7OnCmYQfEe-D-fRCT6zlQQ _EYftYoQiEe-D-fRCT6zlQQ _Bgzs9YSCEe-tEvGAhNRu6Q" incomingEdges="_7OnCmYQfEe-D-fRCT6zlQQ _EYftYoQiEe-D-fRCT6zlQQ _uRGjAoQiEe-D-fRCT6zlQQ" width="12" height="10">
         <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability"/>
         <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Capability"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_EEQtRIQjEe-D-fRCT6zlQQ" description="_EEQtQoQjEe-D-fRCT6zlQQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="250,240,180"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_-KkJzIVFEe-EbNsaHvCC2A" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+        </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Nua3IIOvEe-dFMCpWL0vag" name="InvolvableElement" tooltipText="" outgoingEdges="_QfAvgoOvEe-dFMCpWL0vag _BONZ6ISFEe-tEvGAhNRu6Q" incomingEdges="_T-knKYQeEe-D-fRCT6zlQQ _e2zU_IQeEe-D-fRCT6zlQQ _qPkkDIQeEe-D-fRCT6zlQQ" width="12" height="10">
@@ -973,7 +983,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OTzc8IN_Ee-JaeuR9NlnAg" sourceNode="_-n_Q4INpEe-JaeuR9NlnAg" targetNode="_-n_Q4INpEe-JaeuR9NlnAg" beginLabel="[0..1] isSpecializedBy" endLabel="[0..*] specializes">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_OTzc8IN_Ee-JaeuR9NlnAg" sourceNode="_-n_Q4INpEe-JaeuR9NlnAg" targetNode="_-n_Q4INpEe-JaeuR9NlnAg" beginLabel="[0..*] isSpecializedBy" endLabel="[0..*] specializes">
       <target xmi:type="ecore:EReference" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement/specializes"/>
       <semanticElements xmi:type="ecore:EReference" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement/isSpecializedBy"/>
       <semanticElements xmi:type="ecore:EReference" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/SpecializableElement/specializes"/>
@@ -998,12 +1008,12 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7GHjcIOnEe-dFMCpWL0vag" sourceNode="_3sdgAIOnEe-dFMCpWL0vag" targetNode="_CWLkcINrEe-JaeuR9NlnAg">
       <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
       <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7GIKgIOnEe-dFMCpWL0vag" targetArrow="InputClosedArrow" routingStyle="tree">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6bf6OYVJEe-EbNsaHvCC2A" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_7GIKgYOnEe-dFMCpWL0vag" showIcon="false">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_6bf6OoVJEe-EbNsaHvCC2A" showIcon="false">
           <labelFormat>italic</labelFormat>
         </beginLabelStyle>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7GIKgoOnEe-dFMCpWL0vag" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6bf6O4VJEe-EbNsaHvCC2A" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
@@ -1284,12 +1294,12 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ho0EDoSFEe-tEvGAhNRu6Q" sourceNode="_3sdgAIOnEe-dFMCpWL0vag" targetNode="_Yfu10IR5Ee-tEvGAhNRu6Q">
       <target xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
       <semanticElements xmi:type="ecore:EClass" href="oML_EPBS_Ecore_Model.ecore#//OMLVocabulary/Component"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ho0ED4SFEe-tEvGAhNRu6Q" targetArrow="InputClosedArrow" routingStyle="tree">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_6bf6P4VJEe-EbNsaHvCC2A" targetArrow="InputClosedArrow" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_ho0EEISFEe-tEvGAhNRu6Q" showIcon="false">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_6bf6QIVJEe-EbNsaHvCC2A" showIcon="false">
           <labelFormat>italic</labelFormat>
         </beginLabelStyle>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ho0EEYSFEe-tEvGAhNRu6Q" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_6bf6QYVJEe-EbNsaHvCC2A" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
