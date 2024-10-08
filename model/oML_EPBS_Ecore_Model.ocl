@@ -24,4 +24,18 @@ inv AsymmetricIncludes: self._includes->forAll(c | not c.isIncludedIn->includes(
 inv IrreflexiveExtends: not self._extends->includes(self)
 inv AsymmetricExtends: self._extends->forAll(c | not c.isExtendedBy->includes(self))
 
+context Actor
+inv onlySpecializesActor: self.specializes->forAll(c | c.oclIsKindOf(Actor))
+inv isSpecializedByActor: self.isSpecializedBy->forAll(c | c.oclIsKindOf(Actor))
+
+context Entity
+inv onlySpecializesEntity: self.specializes->forAll(c | c.oclIsKindOf(Entity))
+inv isSpecializedByEntity: self.isSpecializedBy->forAll(c | c.oclIsKindOf(Entity))
+
+context Chain
+inv onlyContainsExchange: self.contains->forAll(c | c.oclIsKindOf(Exchange))
+
+context Exchange
+inv RestrictContainmentToChain: self.isContainedIn->forAll(c | c.oclIsKindOf(Chain))
+
 endpackage
